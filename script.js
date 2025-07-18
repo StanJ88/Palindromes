@@ -13,7 +13,7 @@ date.addEventListener('keydown', (event) => {
 }
 )
 function isValidDate(entry) {
-let dateObj = entry.trim().split('/');
+let dateObj = entry.split('/');
 const [ day, month, year] = dateObj;
 const dateFinale = new Date(Number(year), Number(month) - 1, Number(day));
 const dateSansSlash = day + month + year 
